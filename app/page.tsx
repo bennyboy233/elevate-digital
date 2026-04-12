@@ -228,7 +228,7 @@ export default function Home() {
                 </ul>
 
                 <a
-                  href="https://buy.stripe.com/your-payment-link"
+                  href="https://buy.stripe.com/3cIfZi2JR9JTbXqfJG43S00"
                   target="_blank"
                   rel="noreferrer"
                   className="mt-8 inline-block rounded-2xl bg-slate-900 px-6 py-3 text-white transition hover:opacity-90"
@@ -236,9 +236,7 @@ export default function Home() {
                   Order My Website
                 </a>
 
-                <p className="mt-4 text-sm text-slate-500">
-                  Replace the Stripe link above with your real payment link.
-                </p>
+            
               </div>
 
               <div className="rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200">
