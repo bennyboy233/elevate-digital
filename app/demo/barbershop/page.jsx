@@ -79,8 +79,8 @@ export default function BarbershopDemoPage() {
             Northline Barbershop
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-white/70">
-            A modern booking-focused barbershop site with real interaction:
-            choose a service, pick a barber, lock in a time, and submit a booking request.
+            A modern booking-focused barbershop demo with barber selection,
+            service selection, time slots, and a booking confirmation flow.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
