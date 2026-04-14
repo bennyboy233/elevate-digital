@@ -333,7 +333,7 @@ export default function Home() {
                 </ul>
 
                 <a
-                  href="https://buy.stripe.com/3cIfZi2JR9JTbXqfJG43S00"
+                  href="https://buy.stripe.com/fZu8wQbgng8h6D60OM43S02"
                   target="_blank"
                   rel="noreferrer"
                   className="mt-8 inline-block rounded-2xl bg-slate-900 px-6 py-3 text-white transition hover:opacity-90"
