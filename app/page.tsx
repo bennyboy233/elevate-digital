@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   const services = [
     {
@@ -19,16 +21,19 @@ export default function Home() {
       name: "Barbershop Demo",
       type: "Demo redesign",
       desc: "A clean booking-focused website concept for a modern barber brand.",
+      href: "/demo/barbershop",
     },
     {
       name: "Plumbing Demo",
       type: "Lead generation site",
       desc: "A service-based website built to drive more calls and quote requests.",
+      href: "/demo/plumbing",
     },
     {
       name: "Restaurant Demo",
       type: "Menu and booking concept",
       desc: "A polished layout showing menu, hours, location, and reservations.",
+      href: "/demo/restaurant",
     },
   ];
 
@@ -190,9 +195,13 @@ export default function Home() {
                 <div className="text-sm text-slate-500">{project.type}</div>
                 <h3 className="mt-2 text-xl font-semibold">{project.name}</h3>
                 <p className="mt-3 leading-7 text-slate-600">{project.desc}</p>
-                <button className="mt-6 rounded-2xl border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50">
+
+                <Link
+                  href={project.href}
+                  className="mt-6 inline-block rounded-2xl border border-slate-300 px-4 py-2 text-sm transition hover:bg-slate-50"
+                >
                   View concept
-                </button>
+                </Link>
               </div>
             ))}
           </div>
@@ -235,8 +244,6 @@ export default function Home() {
                 >
                   Order My Website
                 </a>
-
-            
               </div>
 
               <div className="rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200">
@@ -275,28 +282,32 @@ export default function Home() {
             </p>
 
             <form
-              action="https://formspree.io/f/your-form-id"
+              action="https://formspree.io/f/REPLACE_WITH_YOUR_REAL_FORM_ID"
               method="POST"
               className="mt-8 grid gap-4 md:grid-cols-2"
             >
               <input
                 name="name"
+                required
                 className="rounded-2xl border border-slate-300 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-slate-300"
                 placeholder="Your name"
               />
               <input
                 name="business"
+                required
                 className="rounded-2xl border border-slate-300 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-slate-300"
                 placeholder="Business name"
               />
               <input
                 type="email"
                 name="email"
+                required
                 className="rounded-2xl border border-slate-300 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-slate-300 md:col-span-2"
                 placeholder="Email address"
               />
               <textarea
                 name="message"
+                required
                 className="min-h-[140px] rounded-2xl border border-slate-300 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-slate-300 md:col-span-2"
                 placeholder="Tell me about your project"
               />
@@ -308,8 +319,7 @@ export default function Home() {
               </button>
 
               <p className="text-sm text-slate-500 md:col-span-2">
-                Replace the Formspree action URL with your real Formspree form link
-                so inquiries go straight to your email.
+                Replace the Formspree action URL with your real Formspree form link.
               </p>
             </form>
           </div>
